@@ -1,0 +1,142 @@
+/* #CCCCFF */
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #4D4D4D;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    min-height: 100vh;
+}
+
+.container .container-area {
+    margin: 3% auto;
+    max-width: 980px;
+    padding: 10px;
+}
+
+/* Header */
+
+.container-area .header .title {
+    color: #CCFFCC;
+    font-weight: 700;
+    font-size: 3rem;
+    text-align: center;
+    border-bottom: 3px solid #CCFFCC;
+    padding-bottom: 30px;
+}
+
+/* Input */
+
+.area-input {
+    display: flex;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.area-input .input {
+    display: flex;
+    flex: 1;
+    border: 1px solid #CCFFCC;
+    border-radius: 10px;
+    padding: 10px;
+    color: #CCFFCC;
+}
+
+.area-input .input .plus-icon {
+    margin-right: 10px;
+    font-size: 1.5rem;
+}
+
+.area-input .input > input {
+    flex: 1;
+    font-size: 1.2rem;
+    outline: none;
+    border: 0px;
+    background-color: transparent;
+    color: #CCFFCC;
+}
+
+.area-input .btn-add {
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: 10px;
+    width: 100px;
+    margin-left: 10px;
+    color: #4D4D4D;
+    background-color: #CCFFCC;
+}
+
+.area-input .btn-add:hover {
+    background-color: #0fc40f;
+}
+
+/* Área das tarefas */
+
+#area-tarefas .tarefa {
+    background-color: #CCFFCC;
+    color: #4D4D4D;
+    border-radius: 10px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin: 20px 0;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#area-tarefas .tarefa > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#area-tarefas .tarefa > div > input {
+    width: 25px;
+    height: 25px;
+}
+
+#area-tarefas .tarefa > div > label {
+    margin-left: 10px;
+}
+
+#area-tarefas .tarefa > div > input:checked ~ label {
+    text-decoration: line-through #4D4D4D;
+    text-decoration-style: solid;
+}
+
+#area-tarefas .btnRemove {
+    background-image: url(./img/icons8-remove-24.png);
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+    border-radius: 10px;
+    height: 40px;
+    width: 40px;
+}
+
+#area-tarefas .btnRemove:hover {
+    background-color: #4D4D4D;
+}
+
+/*
+<div id="area-tarefas">
+    <div class="tarefa">
+        <div>
+            <input type="checkbox" onchange="ischeck()">
+            <label for="">Comprar o pão na padaria</label>
+        </div>
+        button class="btnRemove"></button>
+    </div>
+</div>
+
+*/
+
